@@ -1,0 +1,8 @@
+{
+  "name": "vim-livedown",
+  "version": "1.0.0",
+  "authors": [
+    "Hrvoje Šimić <shime.ferovac@gmail.com>"
+  ],
+  "license": "MIT"
+}
