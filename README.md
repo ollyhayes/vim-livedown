@@ -2,6 +2,8 @@
 
 A Vim plugin for [Livedown](https://github.com/shime/livedown).
 
+![](demo.gif)
+
 ## Installation
 
 First make sure you have [node](http://nodejs.org/) with [npm](https://www.npmjs.org/) installed. 
