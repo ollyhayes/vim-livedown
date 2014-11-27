@@ -23,5 +23,5 @@ endfunction
 
 augroup livedown
   au! BufWinEnter <buffer> call s:buffer_switched()
-  au! VimLeave <buffer> call system("livedown stop &")
+  au! VimLeave <buffer> call system("livedown stop --port " . g:livedown_port . " &")
 augroup END
