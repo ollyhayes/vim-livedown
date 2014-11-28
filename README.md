@@ -21,7 +21,10 @@ Then install this plugin with your preferred installation method. I recommend in
 There are several configuration variables you can customize to suit your needs, with the following defaults.
 
 ```vimscript
-" should the browser window pop-up upon starting Livedown
+" should markdown preview get shown automatically upon opening markdown buffer
+let g:livedown_autorun = 0
+
+" should the browser window pop-up upon previewing
 let g:livedown_open = 1 
 
 " the port on which Livedown server will run

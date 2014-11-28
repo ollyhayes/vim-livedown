@@ -1,3 +1,7 @@
+if !exists('g:livedown_autorun')
+  let g:livedown_autorun = 0
+endif
+
 if !exists('g:livedown_open')
   let g:livedown_open = 1
 endif
