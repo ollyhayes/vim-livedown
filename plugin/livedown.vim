@@ -11,7 +11,7 @@ if !exists('g:livedown_port')
 endif
 
 function! LivedownPreview()
-  call system("livedown start " . expand('%:p') . 
+  call system("livedown start '" . expand('%:p') . "'" .
         \ (g:livedown_open ? " --open" : "") .
         \ " --port " . g:livedown_port .
         \ " &")
