@@ -1,3 +1,6 @@
+command LivedownPreview :call LivedownPreview()
+command LivedownKill :call LivedownKill()
+
 if !exists('g:livedown_autorun')
   let g:livedown_autorun = 0
 endif
