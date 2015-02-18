@@ -1,7 +1,7 @@
 augroup livedown
   if g:livedown_autorun
-    au! BufWinEnter <buffer> call LivedownPreview()
+    au! BufWinEnter <buffer> LivedownPreview
   endif
 
-  au! VimLeave <buffer> call LivedownKill()
+  au! VimLeave <buffer> LivedownKill
 augroup END
