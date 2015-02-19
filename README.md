@@ -18,7 +18,7 @@ Then install this plugin with your preferred installation method. I recommend in
 
 ## Usage
 
-There are the commands that you can use:
+The following commands are available
 
 ```vimscript
 " launch the Livedown server and preview your markdown file
@@ -28,7 +28,7 @@ There are the commands that you can use:
 :LivedownKill		
 ```
 
-Feel free to set your own mapping:
+Bonus points for setting your own mapping
 
 ```vimscript
 nmap gm :LivedownPreview<CR>
