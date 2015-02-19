@@ -16,6 +16,24 @@ Then install this plugin with your preferred installation method. I recommend in
 
     $ git clone git://github.com/shime/vim-livedown.git ~/.vim/bundle/vim-livedown
 
+## Usage
+
+There are the commands that you can use:
+
+```vimscript
+" launch the Livedown server and preview your markdown file
+:LivedownPreview
+
+" stop the Livedown server
+:LivedownKill		
+```
+
+Feel free to set your own mapping:
+
+```vimscript
+nmap gm :LivedownPreview<CR>
+```
+
 ## Configuration
 
 There are several configuration variables you can customize to suit your needs, with the following defaults.
@@ -29,12 +47,6 @@ let g:livedown_open = 1
 
 " the port on which Livedown server will run
 let g:livedown_port = 1337
-```
-
-There is also a global function you can call explicitly for previews
-
-```vimscript
-map gm :call LivedownPreview()<CR>
 ```
 
 ## License
