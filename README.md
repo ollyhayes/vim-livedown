@@ -25,13 +25,16 @@ There are the commands that you can use:
 :LivedownPreview
 
 " stop the Livedown server
-:LivedownKill		
+:LivedownKill
+
+" launch/kill the Livedown server
+:LivedownToggle
 ```
 
 Feel free to set your own mapping:
 
 ```vimscript
-nmap gm :LivedownPreview<CR>
+nmap gm :LivedownToggle<CR>
 ```
 
 ## Configuration
