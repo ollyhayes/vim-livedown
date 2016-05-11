@@ -14,15 +14,21 @@ if !exists('g:livedown_port')
   let g:livedown_port = 1337
 endif
 
+if !exists('g:livedown_browser')
+  let g:livedown_browser = "firefox"
+endif
+
 function! s:LivedownPreview()
   if has('win32')
     silent! call system("start /B " . "livedown start \"" . expand('%:p') . "\"" .
       \ (g:livedown_open ? " --open" : "") .
-      \ " --port " . g:livedown_port)
+      \ " --port " . g:livedown_port .
+      \ " --browser " . g:livedown_browser)
   else 
     call system("livedown start '" . expand('%:p') . "'" .
       \ (g:livedown_open ? " --open" : "") .
       \ " --port " . g:livedown_port .
+      \ " --browser " . g:livedown_browser .
       \ " &")
   endif
 endfunction
